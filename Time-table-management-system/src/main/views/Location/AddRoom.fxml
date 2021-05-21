@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="489.0" prefWidth="1096.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Location.AddRoomController">
+
+    <children>
+        <TableView fx:id="tblRoomAdd" layoutX="354.0" layoutY="18.0" prefHeight="384.0" prefWidth="725.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="87.0" AnchorPane.topAnchor="18.0">
+            <columns>
+                <TableColumn minWidth="0.0" prefWidth="97.0" text="Center" />
+                <TableColumn prefWidth="114.0" text="Building" />
+                <TableColumn prefWidth="129.0" text="Room" />
+                <TableColumn prefWidth="138.0" text="Capacity" />
+            <TableColumn maxWidth="200.0" prefWidth="139.0" text="Type" />
+                <TableColumn fx:id="removeRoomAdd" prefWidth="103.0" text="Remove" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtRoomAdd" layoutX="171.0" layoutY="121.0" prefHeight="31.0" prefWidth="119.0" />
+        <Button fx:id="btnRoomAdd" contentDisplay="TOP" layoutX="299.0" layoutY="272.0" mnemonicParsing="false" onAction="#AddRoomsToTable" prefHeight="39.0" prefWidth="43.0" style="-fx-background-color: white;" styleClass="pnlStudentButton">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+            <graphic>
+                <FontAwesomeIconView fx:id="AddRoomsToTable" glyphName="PLUS_CIRCLE" size="35" text="" wrappingWidth="33.2857141494751" />
+            </graphic>
+        </Button>
+        <Button fx:id="btnRoomSave" layoutX="971.0" layoutY="426.0" mnemonicParsing="false" onAction="#saveRoomDetails" prefHeight="39.0" prefWidth="106.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0" AnchorPane.bottomAnchor="24.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <TextField fx:id="txtCapacities" layoutX="171.0" layoutY="171.0" prefHeight="31.0" prefWidth="119.0" />
+        <ComboBox fx:id="cmbCenter" layoutX="171.0" layoutY="21.0" onAction="#getBuilding" prefHeight="31.0" prefWidth="119.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Malabe" />
+                    <String fx:value="Kandy" />
+                    <String fx:value="Kurunegala" />
+                    <String fx:value="Matara" />
+                    <String fx:value="Jaffna" />
+                    <String fx:value="Metro" />
+                    <String fx:value="SLIIT Academy" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <TextField fx:id="txtBuilding" layoutX="171.0" layoutY="71.0" prefHeight="31.0" prefWidth="119.0" />
+        <Text layoutX="65.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center" wrappingWidth="99.99999507889152" />
+        <Text layoutX="65.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building" wrappingWidth="66.99999507889152" />
+        <Text layoutX="65.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity" wrappingWidth="67.00000727176666" />
+        <Text layoutX="65.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room" wrappingWidth="67.00000727176666" />
+      <ComboBox fx:id="cmbLabType" layoutX="171.0" layoutY="229.0" onAction="#getBuilding" prefHeight="31.0" prefWidth="119.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Malabe" />
+               <String fx:value="Kandy" />
+               <String fx:value="Kurunegala" />
+               <String fx:value="Matara" />
+               <String fx:value="Jaffna" />
+               <String fx:value="Metro" />
+               <String fx:value="SLIIT Academy" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Text layoutX="65.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="67.00000727176666" />
+    </children>
+
+
+</AnchorPane>
