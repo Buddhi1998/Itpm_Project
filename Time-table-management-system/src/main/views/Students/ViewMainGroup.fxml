@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="481.0" prefWidth="820.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Student.ViewMainGroupController">
+   <children>
+      <Label layoutX="106.0" layoutY="37.0" prefHeight="31.0" prefWidth="91.0" stylesheets="@../../css/Student.css" text="Goup Number" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="78.0" prefHeight="31.0" prefWidth="95.0" stylesheets="@../../css/Student.css" text="Group Id" AnchorPane.topAnchor="78.0">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <TextField fx:id="txtGroupId" layoutX="264.0" layoutY="78.0" prefHeight="25.0" prefWidth="306.0" AnchorPane.topAnchor="78.0" />
+      <TextField fx:id="txtGroupNumber" layoutX="264.0" layoutY="40.0" onAction="#changeGroupId" prefHeight="25.0" prefWidth="306.0" AnchorPane.topAnchor="40.0" />
+      <Button fx:id="btnUpdate" layoutX="478.0" layoutY="117.0" mnemonicParsing="false" onAction="#updateGroupNumber" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Update" textFill="#f5f0f0" AnchorPane.topAnchor="117.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblMainGroup" layoutX="95.0" layoutY="187.0" prefHeight="278.0" prefWidth="707.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="16.0" AnchorPane.topAnchor="187.0">
+         <columns>
+            <TableColumn prefWidth="60.0" text="Id" />
+            <TableColumn prefWidth="230.0" text="Group Number" />
+            <TableColumn prefWidth="229.0" text="Group Id" />
+            <TableColumn fx:id="colEdit" prefWidth="94.0" />
+            <TableColumn fx:id="colDelete" prefWidth="90.0" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="95.0" layoutY="154.0" onAction="#searchDetails" prefHeight="25.0" prefWidth="212.0" promptText="Enter Group Number" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="154.0" />
+   </children>
+</AnchorPane>

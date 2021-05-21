@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="867.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Dashboard.DashboardController">
+   <children>
+      <BarChart fx:id="subjectChart" layoutX="565.0" layoutY="249.0" prefHeight="360.0" prefWidth="510.0" style="-fx-border-color: #800080;" title="NUMBER OF SUBJECTS FOR SEMESTERS">
+        <xAxis>
+          <CategoryAxis label="Year and Semester" prefWidth="520.0" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="No of Subjects" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <BarChart fx:id="employeeChart" layoutX="27.0" layoutY="249.0" prefHeight="360.0" prefWidth="510.0" style="-fx-border-color: #800080;" title="NUMBER OF EMPLOYEES FOR FACULTIES">
+        <xAxis>
+          <CategoryAxis fx:id="yEmp" label="Faculty" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="No of Employees" side="LEFT" fx:id="xEmp" />
+        </yAxis>
+      </BarChart>
+      <Pane layoutX="23.0" layoutY="31.0" prefHeight="122.0" prefWidth="245.0" style="-fx-background-radius: 10;" styleClass="dashboard-pane" stylesheets="@../../css/Student.css">
+         <children>
+            <Label fx:id="noOfLecturesLbl" alignment="CENTER" layoutX="34.0" layoutY="27.0" prefHeight="68.0" prefWidth="175.0" text="56" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="292.0" layoutY="31.0" prefHeight="122.0" prefWidth="245.0" style="-fx-background-radius: 10;" styleClass="dashboard-pane" stylesheets="@../../css/Student.css">
+         <children>
+            <Label fx:id="noOfSubjects" alignment="CENTER" layoutX="40.0" layoutY="27.0" prefHeight="68.0" prefWidth="175.0" text="1536" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="562.0" layoutY="31.0" prefHeight="122.0" prefWidth="245.0" style="-fx-background-radius: 10;" styleClass="dashboard-pane" stylesheets="@../../css/Student.css">
+         <children>
+            <Label fx:id="noOfBuildings" alignment="CENTER" layoutX="35.0" layoutY="27.0" prefHeight="68.0" prefWidth="175.0" text="32" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="830.0" layoutY="31.0" prefHeight="122.0" prefWidth="245.0" style="-fx-background-radius: 10;" styleClass="dashboard-pane" stylesheets="@../../css/Student.css">
+         <children>
+            <Label fx:id="noOfRooms" alignment="CENTER" layoutX="35.0" layoutY="27.0" prefHeight="68.0" prefWidth="175.0" text="125" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="87.0" layoutY="157.0" prefHeight="20.0" prefWidth="117.0" text="NO OF LECTURES">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="157.0" prefHeight="20.0" prefWidth="135.0" text="NO OF BUILDINGS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="157.0" prefHeight="20.0" prefWidth="117.0" text="NO OF SUBJECTS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="889.0" layoutY="157.0" prefHeight="20.0" prefWidth="108.0" text="NO OF ROOMS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

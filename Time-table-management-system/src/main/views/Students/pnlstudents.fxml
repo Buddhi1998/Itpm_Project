@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="602.0" prefWidth="982.0" style="-fx-background-color: E8E8E8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Student.PanelStudentsController">
+   <children>
+      <Pane layoutX="6.0" prefHeight="50.0" prefWidth="966.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="btnAcademicYear" contentDisplay="TOP" layoutX="156.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="200.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="Academic Year &amp; Semester">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="btnMainGroup" alignment="CENTER" contentDisplay="TOP" layoutX="357.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="149.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="Main Group">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSubGroup" alignment="CENTER" contentDisplay="TOP" layoutX="508.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="149.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="Sub Group">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNotAvailable" alignment="CENTER" contentDisplay="TOP" layoutX="658.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="149.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="Not Available">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProgramme" alignment="CENTER" contentDisplay="TOP" layoutX="808.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="149.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="Programme">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAllDetails" contentDisplay="TOP" layoutX="5.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="149.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="All Details">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <BorderPane fx:id="pnlStudent" layoutX="6.0" layoutY="52.0" prefHeight="547.0" prefWidth="973.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 10;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="52.0" />
+   </children>
+</AnchorPane>
