@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="585.0" prefWidth="753.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Location.BuildingMainRowController">
+
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="606.0" prefWidth="769.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Label layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="378.0" text="Building Details">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Label>
+                <FontAwesomeIconView fill="#f8f1f1" glyphName="SEARCH" layoutX="394.0" layoutY="-227.0" size="20" />
+                <Button fx:id="btnViewBuilding" layoutX="451.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="189.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="VIEW &amp; UPDATE" textFill="#f5f0f0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <FontAwesomeIconView fill="#f8f3f3" glyphName="PLUS" layoutX="112.0" layoutY="108.0" size="25.0" wrappingWidth="30.0" />
+                <Button fx:id="btnSearchBuilding" layoutX="248.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="190.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="SEARCH" textFill="#f5f0f0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnAddBuilding" layoutX="48.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="188.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="ADD" textFill="#f5f0f0">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <BorderPane fx:id="pnlMainBuilding" layoutX="14.0" layoutY="196.0" prefHeight="403.0" prefWidth="706.0" style="-fx-background-color: FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0" />
+            </children></AnchorPane>
+    </content>
+
+</ScrollPane>

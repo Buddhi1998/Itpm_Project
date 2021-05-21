@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="593.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Location.AddPrefSessionController">
+   <children>
+      <Label layoutX="80.0" layoutY="40.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Lecturer">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="206.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Group">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="251.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Session ID">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <TextField fx:id="txtLecturer" layoutX="218.0" layoutY="40.0" prefHeight="31.0" prefWidth="263.0" />
+      <TextField fx:id="txtSubject" layoutX="218.0" layoutY="81.0" prefHeight="31.0" prefWidth="263.0" />
+      <Label layoutX="80.0" layoutY="81.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Subject">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTag" layoutX="218.0" layoutY="122.0" prefHeight="31.0" prefWidth="263.0" />
+      <Label layoutX="80.0" layoutY="122.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Tag">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtGroup" layoutX="218.0" layoutY="205.0" prefHeight="31.0" prefWidth="263.0" />
+      <Button fx:id="btnSearch" layoutX="500.0" layoutY="204.0" mnemonicParsing="false" onAction="#searchSessionDetails" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Search" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="81.0" layoutY="165.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Group Type">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <RadioButton fx:id="btnRadioMain" alignment="CENTER_LEFT" contentDisplay="TOP" layoutX="218.0" layoutY="165.0" mnemonicParsing="false" onAction="#loadGroupDetails" prefHeight="31.0" prefWidth="185.0" text="Main-Group" />
+      <RadioButton fx:id="btnRadioSub" alignment="CENTER_LEFT" contentDisplay="TOP" layoutX="350.0" layoutY="170.0" mnemonicParsing="false" onAction="#loadGroupDetails" prefHeight="22.0" prefWidth="129.0" text="Sub-Group" />
+      <Label fx:id="lblSessionId" layoutX="219.0" layoutY="251.0" prefHeight="31.0" prefWidth="263.0" stylesheets="@../../css/Student.css">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <TextField fx:id="txtBuildingOpt" layoutX="219.0" layoutY="335.0" onAction="#getRoom" prefHeight="31.0" prefWidth="263.0" />
+      <Text layoutX="81.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building" wrappingWidth="169.0000051036477" />
+      <Text layoutX="81.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center" wrappingWidth="169.0000051036477" />
+      <TextField fx:id="txtRoomOpt1" layoutX="220.0" layoutY="379.0" prefHeight="31.0" prefWidth="263.0" />
+      <Text layoutX="82.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room" wrappingWidth="169.0000051036477" />
+      <ComboBox fx:id="cmbCenter" layoutX="219.0" layoutY="292.0" onAction="#getBuilding" prefHeight="31.0" prefWidth="263.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Malabe" />
+               <String fx:value="Kandy" />
+               <String fx:value="Kurunegala" />
+               <String fx:value="Matara" />
+               <String fx:value="Jaffna" />
+               <String fx:value="Metro" />
+               <String fx:value="SLIIT Academy" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Button fx:id="btnSave" layoutX="503.0" layoutY="379.0" mnemonicParsing="false" onAction="#saveSessionRoom" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

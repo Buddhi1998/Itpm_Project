@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="638.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Location.AddPrefSubjectController">
+
+    <children>
+        <TextField fx:id="txtSubTagOpt" layoutX="141.0" layoutY="66.0" prefHeight="31.0" prefWidth="200.0" />
+        <Button fx:id="btnSubjectOptions" layoutX="242.0" layoutY="267.0" mnemonicParsing="false" onAction="#saveTagRoom" prefHeight="39.0" prefWidth="106.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+      <TextField fx:id="txtBuildingOpt" layoutX="141.0" layoutY="153.0" onAction="#getRoom" prefHeight="31.0" prefWidth="200.0" />
+      <Text layoutX="46.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject" wrappingWidth="169.0000051036477">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag" wrappingWidth="169.0000051036477">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="46.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building" wrappingWidth="169.0000051036477">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <Text layoutX="46.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center" wrappingWidth="169.0000051036477">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+      <TextField fx:id="txtRoomOpt1" layoutX="142.0" layoutY="197.0" prefHeight="31.0" prefWidth="200.0" />
+      <Text layoutX="47.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room" wrappingWidth="169.0000051036477">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Text>
+        <ComboBox fx:id="cmbCenter" layoutX="141.0" layoutY="109.0" onAction="#getBuilding" prefHeight="31.0" prefWidth="200.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Malabe" />
+                    <String fx:value="Kandy" />
+                    <String fx:value="Kurunegala" />
+                    <String fx:value="Matara" />
+                    <String fx:value="Jaffna" />
+                    <String fx:value="Metro" />
+                    <String fx:value="SLIIT Academy" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <TableView fx:id="tblBuilding" layoutX="429.0" layoutY="23.0" prefHeight="411.0" prefWidth="538.0" stylesheets="@../../css/Student.css">
+         <columns>
+            <TableColumn minWidth="0.0" prefWidth="105.0" text="Tag" />
+            <TableColumn prefWidth="108.0" text="Subject" />
+            <TableColumn fx:id="removeBuilding" prefWidth="108.0" text="Center" />
+            <TableColumn fx:id="removeBuilding1" prefWidth="108.0" text="Building" />
+            <TableColumn fx:id="removeBuilding2" prefWidth="108.0" text="Room" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnBuildingAdd" contentDisplay="TOP" layoutX="364.0" layoutY="172.0" mnemonicParsing="false" onAction="#AddSubjectToTable" prefHeight="59.0" prefWidth="52.0" style="-fx-background-color: white;" styleClass="pnlStudentButton">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="35" text="" wrappingWidth="33.2857141494751" />
+         </graphic>
+      </Button>
+      <TextField fx:id="txtTagOpt1" layoutX="141.0" layoutY="23.0" prefHeight="31.0" prefWidth="200.0" />
+    </children>
+
+</AnchorPane>

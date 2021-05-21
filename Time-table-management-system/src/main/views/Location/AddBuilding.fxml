@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="434.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Location.AddBuildingController">
+
+    <children>
+        <TableView fx:id="tblBuilding" layoutX="420.0" layoutY="14.0" prefHeight="343.0" prefWidth="509.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="77.0" AnchorPane.topAnchor="14.0">
+            <columns>
+                <TableColumn minWidth="0.0" prefWidth="162.0" text="Center" />
+                <TableColumn prefWidth="208.0" text="Building" />
+                <TableColumn fx:id="removeBuilding" prefWidth="136.0" text="Remove" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtBuildingAdd" layoutX="171.0" layoutY="86.0" prefHeight="31.0" prefWidth="169.0" />
+        <Button fx:id="btnBuildingAdd" contentDisplay="TOP" layoutX="353.0" layoutY="58.0" mnemonicParsing="false" onAction="#AddBuildingsToTable" prefHeight="39.0" prefWidth="52.0" style="-fx-background-color: white;" styleClass="pnlStudentButton">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+         <graphic>
+              <FontAwesomeIconView glyphName="PLUS_CIRCLE" size="35" text="" wrappingWidth="33.2857141494751" />
+         </graphic>
+        </Button>
+        <Button fx:id="btnBuildingSave" layoutX="823.0" layoutY="368.0" mnemonicParsing="false" onAction="#saveBuildingDetails" prefHeight="39.0" prefWidth="106.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0" AnchorPane.bottomAnchor="27.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="cmbCenterAdd" layoutX="171.0" layoutY="33.0" prefHeight="31.0" prefWidth="169.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Malabe" />
+                    <String fx:value="Kandy" />
+                    <String fx:value="Kurunegala" />
+                    <String fx:value="Matara" />
+                    <String fx:value="Jaffna" />
+                    <String fx:value="Metro" />
+                    <String fx:value="SLIIT Academy" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+      <Text layoutX="52.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Center" wrappingWidth="77.99999535083771" />
+      <Text layoutX="52.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building" wrappingWidth="78.00000086426735" />
+    </children>
+
+
+</AnchorPane>
