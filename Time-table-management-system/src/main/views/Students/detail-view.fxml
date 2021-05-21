@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="1028.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Student.DetailViewController">
+    <children>
+        <Label layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="378.0" text="Group Main Details">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblYearSemName" layoutX="378.0" layoutY="85.0" prefHeight="31.0" prefWidth="129.0" />
+        <TableView fx:id="tblGroupMainTable" layoutX="16.0" layoutY="69.0" prefHeight="391.0" prefWidth="989.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="32.0" AnchorPane.topAnchor="69.0">
+            <columns>
+                <TableColumn prefWidth="145.0" text="Academic Year &amp; Sem" />
+                <TableColumn prefWidth="130.0" text="Programme" />
+            <TableColumn prefWidth="137.0" text="Group Name" />
+                <TableColumn prefWidth="149.0" text="Group No" />
+            <TableColumn prefWidth="145.0" text="Group ID" />
+            <TableColumn prefWidth="132.0" text="Sub Group No" />
+            <TableColumn prefWidth="150.0" text="Sub Group ID" />
+            </columns>
+        </TableView>
+    </children>
+
+
+
+</AnchorPane>
