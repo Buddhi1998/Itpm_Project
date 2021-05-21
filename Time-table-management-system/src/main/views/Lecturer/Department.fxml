@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="492.0" prefWidth="685.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Lecturer.DepartmentController">
+   <children>
+      <Label layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="378.0" text="Department Details">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="77.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Department Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYearSemName" layoutX="378.0" layoutY="85.0" prefHeight="31.0" prefWidth="129.0" />
+      <TableView fx:id="tblDept" layoutX="83.0" layoutY="170.0" prefHeight="300.0" prefWidth="428.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="22.0" AnchorPane.topAnchor="170.0">
+        <columns>
+          <TableColumn prefWidth="52.0" text="Id" />
+            <TableColumn prefWidth="292.0" text="Department Name" />
+            <TableColumn fx:id="colEdit" prefWidth="42.0" />
+            <TableColumn fx:id="colDelete" prefWidth="40.0" />
+        </columns>
+      </TableView>
+       <Button fx:id="btnSave" layoutX="221.0" layoutY="118.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0">
+           <font>
+               <Font name="System Bold" size="13.0" />
+           </font>
+       </Button>
+      <TextField fx:id="txtDepartmentName" layoutX="221.0" layoutY="80.0" prefHeight="25.0" prefWidth="205.0" />
+   </children>
+</AnchorPane>

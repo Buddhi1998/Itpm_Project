@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="485.0" prefWidth="740.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Lecturer.ViewLecturerController">
+   <children>
+      <Button fx:id="btnUpdate" layoutX="482.0" layoutY="225.0" mnemonicParsing="false" onAction="#updateLecturer" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Update" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblMainGroup" layoutX="88.0" layoutY="273.0" prefHeight="212.0" prefWidth="687.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="273.0">
+         <columns>
+            <TableColumn prefWidth="88.0" text="Id" />
+            <TableColumn prefWidth="237.0" text="Name" />
+            <TableColumn prefWidth="206.0" text="Faculty" />
+            <TableColumn fx:id="colEdit" prefWidth="77.0" text="View" />
+            <TableColumn fx:id="colDelete" prefWidth="78.0" text="Delete" />
+         </columns>
+      </TableView>
+      <Label layoutX="135.0" layoutY="14.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Name">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="60.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Faculty">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepartment" layoutX="275.0" layoutY="105.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="txtName" layoutX="275.0" layoutY="14.0" prefHeight="25.0" prefWidth="176.0" />
+      <Label layoutX="135.0" layoutY="105.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Department">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="144.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Center">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="182.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Building">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="135.0" layoutY="225.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Designation">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <TextField fx:id="txtFaculty" layoutX="275.0" layoutY="60.0" prefHeight="25.0" prefWidth="176.0" />
+      <TextField fx:id="txtBuilding" layoutX="275.0" layoutY="182.0" prefHeight="26.0" prefWidth="176.0" />
+      <ComboBox fx:id="txtDesignation" layoutX="275.0" layoutY="227.0" onAction="#getDesignation" prefHeight="31.0" prefWidth="176.0" />
+      <ComboBox fx:id="txtCenter" layoutX="275.0" layoutY="144.0" onAction="#getCenter" prefHeight="31.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>
