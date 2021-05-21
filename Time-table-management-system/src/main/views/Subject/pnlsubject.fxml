@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="602.0" prefWidth="982.0" style="-fx-background-color: E8E8E8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Subject.PnlSubjectController">
+   <children>
+      <BorderPane fx:id="pnlSubject" layoutX="2.0" layoutY="52.0" prefHeight="548.0" prefWidth="982.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 10;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="52.0" />
+      <Pane layoutX="4.0" layoutY="1.0" prefHeight="50.0" prefWidth="211.0" style="-fx-background-color: FFFFFF; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="btnSubject" contentDisplay="TOP" layoutX="4.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="47.0" prefWidth="200.0" styleClass="pnlStudentButton" stylesheets="@../../css/Student.css" text="Subject">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

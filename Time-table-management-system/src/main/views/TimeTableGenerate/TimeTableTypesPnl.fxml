@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.TimeTableGenerate.TimeTableTypesPnl">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" prefHeight="31.0" prefWidth="378.0" text="Generate Time Tables">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStudent" layoutX="62.0" layoutY="92.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="189.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="STUDENT" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLecturer" layoutX="288.0" layoutY="92.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="188.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="LECTURER" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRoom" layoutX="515.0" layoutY="92.0" mnemonicParsing="false" onAction="#handleEvents" prefHeight="46.0" prefWidth="189.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="ROOM" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="pnlMain" layoutY="149.0" prefHeight="449.0" prefWidth="763.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

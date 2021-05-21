@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Session.RequestSessionController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="565.0" prefWidth="798.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="378.0" text="Request Session Details">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="80.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Lecturer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="380.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="To Time">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="335.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="From Time">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="246.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Group">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <Button fx:id="btnSave" layoutX="498.0" layoutY="503.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="cmbDate" layoutX="208.0" layoutY="290.0" prefHeight="31.0" prefWidth="263.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Sunday" />
+                     <String fx:value="Monday" />
+                     <String fx:value="Tuesday" />
+                     <String fx:value="Wednesday" />
+                     <String fx:value="Thursday" />
+                     <String fx:value="Friday" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <JFXTimePicker fx:id="toTime" defaultColor="#7151dd" layoutX="209.0" layoutY="335.0" prefHeight="26.0" prefWidth="270.0" />
+            <JFXTimePicker fx:id="fromTime" defaultColor="#7151dd" layoutX="209.0" layoutY="380.0" prefHeight="26.0" prefWidth="270.0" />
+            <TextField fx:id="txtLecturer" layoutX="208.0" layoutY="80.0" prefHeight="31.0" prefWidth="263.0" />
+            <TextField fx:id="txtSubject" layoutX="208.0" layoutY="121.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="121.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Subject">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTag" layoutX="208.0" layoutY="162.0" onAction="#SelectTag" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="162.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Tag">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtGroup" layoutX="208.0" layoutY="245.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="290.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Day">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="205.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Group Type">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <ToggleButtonGroup layoutX="209.0" layoutY="186.0" prefHeight="31.0" prefWidth="359.0">
+               <toggles>
+                  <RadioButton fx:id="btnRadioMain" alignment="CENTER_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadGroupDetails" prefHeight="66.0" prefWidth="185.0" text="Main-Group" />
+                  <RadioButton fx:id="btnRadioSub" alignment="CENTER_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadGroupDetails" prefHeight="22.0" prefWidth="129.0" text="Sub-Group" />
+               </toggles>
+            </ToggleButtonGroup>
+            <Label layoutX="71.0" layoutY="465.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Building">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBuilding" layoutX="208.0" layoutY="465.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="71.0" layoutY="503.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Room">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRoom" layoutX="208.0" layoutY="503.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="426.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Center">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <ComboBox fx:id="txtCenter" layoutX="208.0" layoutY="426.0" onAction="#getCenter" prefHeight="31.0" prefWidth="263.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

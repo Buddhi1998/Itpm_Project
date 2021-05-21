@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Session.ViewMainSessionController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="24.0" prefHeight="438.0" prefWidth="916.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tblGroupCount" layoutX="12.0" layoutY="60.0" maxHeight="1.7976931348623157E308" prefHeight="349.0" prefWidth="782.0" stylesheets="@../../css/Student.css" AnchorPane.bottomAnchor="29.0" AnchorPane.topAnchor="60.0">
+               <columns>
+                  <TableColumn minWidth="0.0" prefWidth="63.0" text="Id" />
+                  <TableColumn prefWidth="156.0" text="Subject Name" />
+                  <TableColumn prefWidth="90.0" text="Tag Name" />
+                  <TableColumn prefWidth="143.0" text="Group Name" />
+                  <TableColumn prefWidth="143.0" text="Student Count" />
+                  <TableColumn prefWidth="88.0" text="Duration" />
+                  <TableColumn prefWidth="97.0" text="Lecturer" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtLecturer" layoutX="97.0" layoutY="22.0" onAction="#searchSession" prefHeight="25.0" prefWidth="219.0" promptText="Enter Lecturer Name" />
+            <TextField fx:id="txtLecturer1" layoutX="333.0" layoutY="22.0" onAction="#searchSession" prefHeight="25.0" prefWidth="219.0" promptText="Enter Subject Name" />
+            <TextField fx:id="txtLecturer2" layoutX="564.0" layoutY="22.0" onAction="#searchSession" prefHeight="25.0" prefWidth="219.0" promptText="Enter Group name" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

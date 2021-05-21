@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ToggleButtonGroup?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Session.MainSessionController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="565.0" prefWidth="798.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="378.0" text="Session Details">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="80.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Lecturer">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="71.0" layoutY="243.0" prefHeight="31.0" prefWidth="113.0" stylesheets="@../../css/Student.css" text="Group">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <Button fx:id="btnSave" layoutX="599.0" layoutY="490.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtLecturer" layoutX="208.0" layoutY="80.0" prefHeight="31.0" prefWidth="263.0" />
+            <TextField fx:id="txtSubject" layoutX="208.0" layoutY="121.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="121.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Subject">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTag" layoutX="208.0" layoutY="162.0" onAction="#SelectTag" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="162.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Tag">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtGroup" layoutX="208.0" layoutY="245.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="71.0" layoutY="202.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Group Type">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <ToggleButtonGroup layoutX="209.0" layoutY="198.0" prefHeight="37.0" prefWidth="285.0">
+               <toggles>
+                  <RadioButton fx:id="btnRadioMain" alignment="CENTER_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadGroupDetails" prefHeight="37.0" prefWidth="143.0" text="Main-Group" />
+                  <RadioButton fx:id="btnRadioSub" alignment="CENTER_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#loadGroupDetails" prefHeight="28.0" prefWidth="129.0" text="Sub-Group" />
+               </toggles>
+            </ToggleButtonGroup>
+            <Label layoutX="70.0" layoutY="292.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Student Count">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <TextField fx:id="txtGroup1" layoutX="208.0" layoutY="292.0" prefHeight="31.0" prefWidth="263.0" />
+            <Label layoutX="70.0" layoutY="340.0" prefHeight="31.0" prefWidth="113.0" stylesheets="@../../css/Student.css" text="Duration">
+               <font>
+                  <Font name="System Bold" size="13.0 " />
+               </font>
+            </Label>
+            <TextField fx:id="txtGroup11" layoutX="209.0" layoutY="340.0" prefHeight="31.0" prefWidth="263.0" />
+            <TableView fx:id="lectTbl" layoutX="152.0" layoutY="391.0" prefHeight="160.0" prefWidth="389.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Lecturer ID" />
+                <TableColumn minWidth="7.0" prefWidth="264.0" text="Lecturer Name" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

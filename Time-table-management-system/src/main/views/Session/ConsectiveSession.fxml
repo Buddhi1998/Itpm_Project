@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="565.0" prefWidth="798.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Session.ConsectiveSessionController">
+   <children>
+      <Label layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="378.0" text="Consective Session Details">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblConsectiveSession" layoutX="36.0" layoutY="131.0" prefHeight="368.0" prefWidth="726.0" stylesheets="@../../css/Student.css">
+         <columns>
+            <TableColumn prefWidth="220.0" text="Group Id" />
+            <TableColumn prefWidth="237.0" text="Subject" />
+            <TableColumn prefWidth="217.0" text="Tag" />
+            <TableColumn fx:id="colEdit" prefWidth="51.0" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txtLecturer" layoutX="36.0" layoutY="88.0" onAction="#searchDetails" prefHeight="25.0" prefWidth="219.0" promptText="Lecturer" />
+      <TextField fx:id="txtSubject" layoutX="272.0" layoutY="88.0" onAction="#searchDetails" prefHeight="25.0" prefWidth="210.0" promptText="Subject" />
+   </children>
+</AnchorPane>

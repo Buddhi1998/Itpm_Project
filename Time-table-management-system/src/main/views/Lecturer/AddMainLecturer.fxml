@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="446.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.Lecturer.AddLecturerController">
+   <children>
+      <Label layoutX="125.0" layoutY="16.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Employee ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="59.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Name">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="104.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Faculty">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Button fx:id="btnSave" layoutX="254.0" layoutY="391.0" mnemonicParsing="false" onAction="#saveDetails" prefHeight="31.0" prefWidth="92.0" style="-fx-background-radius: 15;" styleClass="btnSave" stylesheets="@../../css/Student.css" text="Save" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDepartment" layoutX="264.0" layoutY="144.0" prefHeight="31.0" prefWidth="176.0" />
+      <TextField fx:id="txtEmpName" layoutX="264.0" layoutY="62.0" prefHeight="31.0" prefWidth="176.0" />
+      <TextField fx:id="txtEmpID" layoutX="265.0" layoutY="16.0" prefHeight="31.0" prefWidth="176.0" />
+      <Label layoutX="125.0" layoutY="144.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Department">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="185.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Center">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="223.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Building">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="264.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Designation">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="302.0" prefHeight="31.0" prefWidth="129.0" stylesheets="@../../css/Student.css" text="Rank">
+         <font>
+            <Font name="System Bold" size="13.0 " />
+         </font>
+      </Label>
+      <TextField fx:id="txtrank" layoutX="265.0" layoutY="302.0" onAction="#setRank" prefHeight="26.0" prefWidth="176.0" />
+      <ComboBox fx:id="txtFaculty" layoutX="264.0" layoutY="104.0" onAction="#getFaculty" prefHeight="31.0" prefWidth="176.0" />
+      <TextField fx:id="txtBuilding" layoutX="265.0" layoutY="223.0" prefHeight="31.0" prefWidth="176.0" />
+      <ComboBox fx:id="txtCenter" layoutX="265.0" layoutY="185.0" onAction="#getCenter" prefHeight="31.0" prefWidth="176.0" />
+      <ComboBox fx:id="txtDesignation" layoutX="265.0" layoutY="264.0" onAction="#getDesignation" prefHeight="31.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>
