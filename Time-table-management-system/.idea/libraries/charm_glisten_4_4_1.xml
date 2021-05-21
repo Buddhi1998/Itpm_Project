@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="charm-glisten-4.4.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/libraries/charm-glisten-4.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/libraries/controlsfx-8.40.14 .jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/libraries/fontawesomefx-8.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/libraries/itextpdf-5.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/libraries/jfoenix-8.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/main/libraries/mysql-connector-java-8.0.21.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,50 @@
+
+.pnlStudentButton{
+    -fx-text-fill: white;
+    -fx-background-color: #929292;
+}
+
+.pnlStudentButton:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #5d5d5d;
+    -fx-border-color: #85fd13;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.btnSave{
+    -fx-background-color: #72a53d;
+}
+
+.btnSave:hover{
+    -fx-background-color: #85fd13;
+}
+.pnlStudentButton:focused{
+    -fx-text-fill: white;
+    -fx-background-color: #5d5d5d;
+    -fx-border-color: #85fd13;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #618049;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-row-cell:filled:hover{
+    -fx-cursor:hand;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, white 0%, #72a53d 50%, white 100%);
+}
+
+.dashboard-pane{
+    -fx-cursor:hand;
+    /*-fx-background-color: linear-gradient(#e66465, #9198e5);*/
+    -fx-background-color:  linear-gradient(from 0% 0% to 100% 100%, white 0%, #72a53d 50%, white 100%);
+}
